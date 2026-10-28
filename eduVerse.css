@@ -1409,11 +1409,19 @@ background: linear-gradient(160deg, rgb(3, 6, 14) 0px, rgb(7, 6, 20) 60%, rgb(12
   }
 
   .faculty-card {
-     display: grid;
-    grid-template-columns: 1fr;
-    width: 370px;
-    position: relative;
-    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: static;
+    gap: 20px;
+  }
+
+  .sub-faculty-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .sub-faculty-card {
@@ -1778,15 +1786,25 @@ background: linear-gradient(160deg, rgb(3, 6, 14) 0px, rgb(7, 6, 20) 60%, rgb(12
   }
 
   .faculty-card {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
   }
 
   .sub-faculty-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
     min-width: 0;
-    margin: 0;
-    padding: 10px 14px 18px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
   }
 
   .sub-faculty-img {
@@ -1794,8 +1812,19 @@ background: linear-gradient(160deg, rgb(3, 6, 14) 0px, rgb(7, 6, 20) 60%, rgb(12
     margin: 10px auto;
   }
 
+  .sub-faculty-card h3,
+  .sub-faculty-card h4 {
+    display: block;
+    text-align: center;
+  }
+
+  .sub-faculty-p {
+    margin: 12px 0;
+    text-align: center;
+  }
+
   .sub-faculty-card span {
-    margin-left: 0;
+    margin: 0 4px;
   }
 
   .story-p {
